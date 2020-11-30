@@ -1,7 +1,12 @@
 <template>
   <section class="container">
     <div>
-      {{ users }}
+      <!-- {{ users[0] }} -->
+      <ul>
+        <li v-for="user in users" :key="user.id">
+           {{ user.id }}, {{ user.name }}
+        </li>
+      </ul>
     </div>
   </section>
 </template>
